@@ -1,1 +1,1 @@
-# drum_kit
+# Drum Kit Project
