@@ -11,6 +11,7 @@ for (let i = 0; i < numberOfDrums; i++) {
 
         const buttonInnerHTML = this.innerHTML;
         makeSound(buttonInnerHTML); 
+        buttonAnimation(buttonInnerHTML); 
     })
 }
 
@@ -54,5 +55,18 @@ function makeSound(key) {
 document.addEventListener("keydown", function(event) {
         
     makeSound(event.key); 
+    buttonAnimation(event.key); 
 
 })
+
+// Create animation when drum is played.
+
+function buttonAnimation(currentkey) {
+  const activeButton = document.querySelector("."+ currentkey); 
+  activeButton.classList.add("pressed")
+
+// Add a timeframe for the reverse
+    setTimeout(function() {
+        activeButton.classList.remove("pressed");
+    }, 100);
+}
