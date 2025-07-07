@@ -5,11 +5,11 @@ const drums = document.querySelectorAll(".drum");
 const numberOfDrums = drums.length; 
 
 
-// To detect drum element clicked
+
 for (let i = 0; i < numberOfDrums; i++) {
     drums[i].addEventListener("click", function() {
 
-        const buttonInnerHTML = this.innerHTML;
+        const buttonInnerHTML = this.innerHTML; // Save the HTML of the button clicked.
         makeSound(buttonInnerHTML); 
         buttonAnimation(buttonInnerHTML); 
     })
