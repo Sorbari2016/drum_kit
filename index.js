@@ -51,7 +51,7 @@ function makeSound(key) {
 }
 
 
-// To detect key being pressed.
+// To event Listeners to the keyboard keys 
 document.addEventListener("keydown", function(event) {
         
     makeSound(event.key); 
