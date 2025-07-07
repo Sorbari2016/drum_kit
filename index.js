@@ -1,6 +1,6 @@
 // JAVASCRIPT CODE 
 
-// Selec all the drums, and loop through, & addevent listener
+// Select all the drums, loop through, & addevent listener
 const drums = document.querySelectorAll(".drum"); 
 const numberOfDrums = drums.length; 
 
